@@ -1,11 +1,27 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+ # NEXT Session — JavaScript 2
 
-To start the slide show:
+Slides for JavaScript Session 2, NEXT 14th, Korea University.
 
-- `pnpm install`
-- `pnpm dev`
-- visit <http://localhost:3030>
+## Development
 
-Edit the [slides.md](./slides.md) to see the changes.
+```bash
+bun install
+bun dev
+```
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+Visit http://localhost:3030
+
+## Build & Deploy
+
+```bash
+bun run build
+# runs: slidev build --base /slides/next-session-js-2/
+```
+
+Pushing to the connected GitHub repository triggers an automatic build and deployment on Vercel.
+
+Deployment URL: `yourdomain.com/slides/next-session-js-2/`
+
+## Editing
+
+Edit [slides.md](./slides.md) to update the slides.
