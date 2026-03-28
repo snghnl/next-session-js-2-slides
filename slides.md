@@ -1,7 +1,7 @@
 ---
 theme: default
 background: assets/js-thumbnail.png
-title: NEXT Session JavaScript 2
+
 info: |
   Presentation slides for JavaScript 2 Session for Korea Univ NEXT 14th members
 
@@ -36,26 +36,25 @@ hideInToc: true
 <Toc columns=2 />
 
 ---
-hideInToc: true
 layout: center
 class: text-center
+hideInToc: true
 ---
 
-# 1세션 복습
+# Review JavaScript 1
 
 지난 시간에 배운 내용을 직접 코드로 확인해 봅시다
 
 ---
-hideInToc: true
 ---
 
-## 1세션 핵심 요약
+## JavaScript 1 Cheat Sheet
 
-<div class="grid grid-cols-3 gap-3 mt-2 text-sm">
+<div class="grid grid-cols-3 gap-2 mt-2 text-sm">
 
 <div>
 
-**📄 Hello, world! & 코드 구조**
+**1) Hello, world! & 코드 구조**
 - `<script>` 태그로 JS 삽입
 - 문(Statement)은 `;` 으로 구분
 - `//` 한 줄, `/* */` 여러 줄 주석
@@ -64,7 +63,7 @@ hideInToc: true
 
 <div>
 
-**📦 변수와 상수**
+**2) 변수와 상수**
 - `let` — 재할당 가능
 - `const` — 재할당 불가
 - camelCase 명명 관례
@@ -73,7 +72,7 @@ hideInToc: true
 
 <div>
 
-**🔢 자료형**
+**3) 자료형**
 - `number`, `string`, `boolean`
 - `null` / `undefined`
 - `typeof` 로 타입 확인
@@ -83,7 +82,7 @@ hideInToc: true
 
 <div>
 
-**💬 alert / prompt / confirm**
+**4) alert / prompt / confirm**
 - `alert` — 메시지 표시
 - `prompt` — 문자열 입력 (취소 → `null`)
 - `confirm` — true / false 반환
@@ -92,7 +91,7 @@ hideInToc: true
 
 <div>
 
-**➗ 연산자**
+**5) 연산자**
 - `+` `-` `*` `/` `%` `**`
 - `==` 느슨한 비교 vs `===` 엄격한 비교
 - `+=` `++` 복합·증감 할당
@@ -101,7 +100,7 @@ hideInToc: true
 
 <div>
 
-**🔀 조건문**
+**6) 조건문**
 - `if / else if / else`
 - falsy: `0` `""` `null` `undefined` `NaN`
 - 삼항 연산자 `조건 ? 참 : 거짓`
@@ -110,7 +109,7 @@ hideInToc: true
 
 <div>
 
-**⚡ 논리 연산자**
+**7) 논리 연산자**
 - `||` — 첫 번째 truthy 반환
 - `&&` — 첫 번째 falsy 반환
 - `!` — Boolean 역전 / `!!` 형 변환
@@ -119,7 +118,7 @@ hideInToc: true
 
 <div>
 
-**🔁 반복문**
+**8) 반복문**
 - `for (init; cond; step)`
 - `while` / `do..while`
 - `break` 종료 / `continue` 건너뜀
@@ -129,7 +128,6 @@ hideInToc: true
 </div>
 
 ---
-hideInToc: true
 ---
 
 ## 복습 — Hello, world!
@@ -143,7 +141,6 @@ hideInToc: true
 ```
 
 ---
-hideInToc: true
 ---
 
 ## 복습 — 코드 구조
@@ -159,7 +156,6 @@ console.log("코드 구조 복습")
 ```
 
 ---
-hideInToc: true
 ---
 
 ## 복습 — 변수와 상수
@@ -179,7 +175,6 @@ console.log(b); // "사과" 가 출력되어야 합니다
 ```
 
 ---
-hideInToc: true
 ---
 
 ## 복습 — 자료형
@@ -202,7 +197,6 @@ console.log(/* 여기를 완성하세요 */);
 ```
 
 ---
-hideInToc: true
 ---
 
 ## 복습 — alert / prompt / confirm
@@ -220,7 +214,6 @@ hideInToc: true
 ```
 
 ---
-hideInToc: true
 ---
 
 ## 복습 — 연산자
@@ -240,20 +233,19 @@ console.log("5" === 5);          // 예측: ?
 ```
 
 ---
-hideInToc: true
 ---
 
 ## 복습 — 조건문
 
 `score` 변수를 바꿔가며 **학점 계산기**를 완성해보세요.
 
-| 점수 | 학점 |
-|------|------|
-| 90 이상 | A |
-| 80 이상 | B |
-| 70 이상 | C |
-| 60 이상 | D |
-| 60 미만 | F |
+<div class="text-xs">
+
+| 학점 | A | B | C | D | F |
+|------|------|------|------|------|------|
+| 점수 | 90 이상 | 80 이상 | 70 이상 | 60 이상 | 60 미만 |
+
+</div>
 
 ```js{monaco-run} {autorun:false}
 let score = 85; // 이 값을 바꿔가며 테스트해보세요
@@ -263,7 +255,6 @@ let score = 85; // 이 값을 바꿔가며 테스트해보세요
 ```
 
 ---
-hideInToc: true
 ---
 
 ## 복습 — 논리 연산자
@@ -288,7 +279,6 @@ console.log("표시 이름:", displayName);
 ```
 
 ---
-hideInToc: true
 ---
 
 ## 복습 — 반복문
@@ -304,4 +294,50 @@ let dan = 3; // 이 값을 바꿔가며 테스트해보세요
 
 ```
 
+---
+src: ./pages/01-switch.md
+---
+
+---
+src: ./pages/02-function.md
+---
+
+---
+src: ./pages/03-function-expression.md
+---
+
+---
+src: ./pages/04-arrow-function.md
+---
+
+---
+src: ./pages/05-object.md
+---
+
+---
+src: ./pages/06-object-copy.md
+---
+
+---
+src: ./pages/07-method-this.md
+---
+
+---
+src: ./pages/08-array.md
+---
+
+---
+src: ./pages/09-optional-chaining.md
+---
+
+---
+src: ./pages/10-array-methods.md
+---
+
+---
+src: ./pages/11-destructuring.md
+---
+
+---
+src: ./pages/12-json.md
 ---
