@@ -1,7 +1,5 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "buildCommand": "npm run build",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "buildCommand": "slidev build --base /slides/next-session-js-2/",
   "outputDirectory": "dist"
 }
