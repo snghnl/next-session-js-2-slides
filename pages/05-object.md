@@ -189,13 +189,13 @@ hideInToc: true
 
 `book` 객체를 만들고 프로퍼티를 추가/삭제/조회해보세요.
 
-```js{monaco-run} {autorun:false}
-// ① title: "자바스크립트", author: "존도우", pages: 300 으로 book 객체를 만드세요
+```js{monaco-run} {autorun:false, height:'220px'}
+// ① title: "자바스크립트", author: "John Doe", pages: 300 으로 book 객체를 만드세요
 let book = /* 여기를 완성하세요 */;
 
 // ② 점 표기법으로 title과 author를 출력하세요
 console.log(/* ? */); // 자바스크립트
-console.log(/* ? */); // 존도우
+console.log(/* ? */); // John Doe
 
 // ③ isRead: false 프로퍼티를 추가하세요
 
@@ -216,7 +216,7 @@ hideInToc: true
 
 동적으로 프로퍼티에 접근하고, 단축 프로퍼티로 객체를 만들어보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // ① 아래 함수를 단축 프로퍼티를 사용해 완성하세요
 function createPerson(name, age, job) {
   return {
@@ -243,7 +243,7 @@ hideInToc: true
 
 `for...in`으로 객체를 순회하며 여러 작업을 해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let scores = {
   수학: 85,
   영어: 92,

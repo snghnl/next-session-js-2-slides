@@ -121,80 +121,6 @@ console.log(h); // 200
 layout: default
 hideInToc: true
 ---
-# 객체 구조 분해 — 기본값 & 나머지
-
-**기본값 설정**
-
-```js
-let options = { title: "Menu" };
-
-let { width = 100, height = 200, title } = options;
-
-console.log(title);  // Menu
-console.log(width);  // 100 (기본값)
-console.log(height); // 200 (기본값)
-```
-
-<v-click>
-
-**콜론 + 기본값 조합**
-
-```js
-let { width: w = 100, height: h = 200, title } = options;
-```
-
-</v-click>
-
-<v-click>
-
-**나머지 프로퍼티 `...rest`**
-
-```js
-let options = { title: "Menu", height: 200, width: 100 };
-let { title, ...rest } = options;
-
-console.log(rest); // { height: 200, width: 100 }
-```
-
-</v-click>
-
----
-layout: default
-hideInToc: true
----
-# 중첩 구조 분해
-
-중첩된 객체/배열도 한 번에 분해할 수 있습니다.
-
-```js
-let options = {
-  size: { width: 100, height: 200 },
-  items: ["Cake", "Donut"],
-  extra: true
-};
-
-let {
-  size: { width, height },
-  items: [item1, item2],
-  title = "Menu"      // 없는 프로퍼티는 기본값 사용
-} = options;
-
-console.log(title);  // Menu
-console.log(width);  // 100
-console.log(item1);  // Cake
-```
-
-<v-click>
-
-> `size`, `items` 자체는 변수로 만들어지지 않습니다.
-> 내부 값만 변수에 할당됩니다.
-
-</v-click>
-
----
-layout: default
-hideInToc: true
----
 # 함수 매개변수에서 구조 분해
 
 매개변수가 많을 때 **객체로 받아서 구조 분해**하면 순서 걱정이 없습니다.
@@ -258,7 +184,9 @@ let { prop: varName = default, ...rest } = object;
 
 </v-click>
 
+
 <v-click>
+<div text="xs"> 
 
 | 기능 | 문법 |
 |---|---|
@@ -267,6 +195,7 @@ let { prop: varName = default, ...rest } = object;
 | 나머지 | `let [a, ...rest] = arr` |
 | 중첩 | `let { size: { w } } = obj` |
 | 함수 매개변수 | `function fn({ a = 1 } = {})` |
+</div>
 
 </v-click>
 
@@ -283,7 +212,7 @@ hideInToc: true
 ---
 # Practice 1 — 배열 구조 분해
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // ① 아래 배열을 구조 분해해서 변수에 담으세요
 let colors = ["빨강", "초록", "파랑", "노랑", "보라"];
 
@@ -310,7 +239,7 @@ hideInToc: true
 ---
 # Practice 2 — 객체 구조 분해
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let user = {
   name: "철수",
   age: 20,
@@ -333,13 +262,14 @@ console.log(point);       // 95
 console.log(rest);        // { role: "admin", score: 95 } 또는 나머지
 ```
 
+
 ---
 layout: default
 hideInToc: true
 ---
 # Practice 3 — 함수 매개변수 구조 분해
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height: '220px'}
 // 아래 함수를 구조 분해 매개변수 방식으로 리팩토링하세요
 
 // ❌ 기존 방식
@@ -365,5 +295,3 @@ console.log(createProfile({ name: "영희", role: "admin", isActive: false }));
 console.log(createProfile());
 // [user] 익명 (0세) - 활성
 ```
-
----

@@ -54,7 +54,7 @@ hideInToc: true
 **지역 변수 (Local Variable)**
 함수 안에서만 존재합니다.
 
-```js {monaco}
+```js {monaco} {height:'220px'}
 function showMessage() {
   let message = "안녕하세요!"; // 지역 변수
   console.log(message);
@@ -71,7 +71,7 @@ console.log(message); // ❌ ReferenceError!
 **외부 변수 (Outer Variable)**
 함수는 바깥 변수를 읽고 수정할 수 있습니다.
 
-```js {monaco}
+```js {monaco} {height:'220px'}
 let userName = 'John';
 
 function showMessage() {
@@ -221,7 +221,7 @@ hideInToc: true
 
 두 수를 받아 **더하고**, **빼고**, **곱하는** 함수 3개를 만들고 호출해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // ① add(a, b): a와 b를 더한 값을 반환
 function add(a, b) {
   // 여기를 완성하세요
@@ -249,7 +249,7 @@ hideInToc: true
 이름과 인사말을 받아 출력하는 함수를 만들어보세요.
 인사말을 전달하지 않으면 **기본값 "안녕하세요"** 를 사용해야 합니다.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // greet(name, greeting): name과 greeting을 조합해 출력
 // 예: greet("철수", "반가워요") → "반가워요, 철수님!"
 // 예: greet("영희")             → "안녕하세요, 영희님!"
@@ -274,7 +274,7 @@ hideInToc: true
 아래 코드는 1~100 사이 **소수(prime number)를 출력**합니다.
 `isPrime(n)` 함수를 분리해서 코드를 더 읽기 좋게 만들어보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // 현재 코드 (함수 분리 전)
 // for (let i = 2; i <= 100; i++) {
 //   let isPrime = true;

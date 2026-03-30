@@ -179,7 +179,7 @@ hideInToc: true
 
 `day` 값에 따라 **한국어 요일 이름**을 출력하는 switch문을 완성해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let day = 3; // 1~7 사이 값을 바꿔가며 테스트해보세요
              // 1=월, 2=화, 3=수, 4=목, 5=금, 6=토, 7=일
 
@@ -201,7 +201,7 @@ hideInToc: true
 `month` 값(1~12)에 따라 **계절**을 출력해보세요.
 여러 case를 묶는 방법을 활용해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let month = 7; // 이 값을 바꿔가며 테스트해보세요
 
 // 봄: 3, 4, 5월 → "봄입니다 🌸"
@@ -248,7 +248,7 @@ if (fruit === "사과") {
 <div>
 
 **변환 후 (switch문)**
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let fruit = "사과"; // 값을 바꿔가며 테스트해보세요
 
 switch (fruit) {

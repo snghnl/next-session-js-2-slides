@@ -236,7 +236,7 @@ hideInToc: true
 
 <div class="overflow-y-auto max-h-96">
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let product = {
   id: 101,
   name: "노트북",
@@ -269,7 +269,7 @@ hideInToc: true
 ---
 # Practice 2 — JSON.parse와 활용
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // 서버에서 받은 JSON 응답이라고 가정합니다
 let response = `{
   "status": 200,
@@ -300,7 +300,7 @@ hideInToc: true
 ---
 # Practice 3 — 직렬화 & 역직렬화 왕복
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // 객체 → JSON → 객체 왕복 여행
 
 let original = {

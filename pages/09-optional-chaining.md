@@ -217,7 +217,7 @@ hideInToc: true
 
 `?.`를 사용해 에러 없이 값을 출력해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let users = [
   { name: "철수", address: { city: "서울", street: "강남대로" } },
   { name: "영희" }, // address 없음
@@ -245,7 +245,7 @@ hideInToc: true
 
 메서드가 있을 수도 없을 수도 있는 객체를 안전하게 처리하세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let users = [
   {
     name: "철수",
@@ -276,7 +276,7 @@ hideInToc: true
 
 API 응답처럼 불완전한 데이터를 안전하게 처리해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let response = {
   status: 200,
   data: {
