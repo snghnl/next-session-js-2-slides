@@ -287,7 +287,7 @@ hideInToc: true
 
 아래 `counter` 객체에 메서드를 추가해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let counter = {
   count: 0,
 
@@ -319,7 +319,7 @@ hideInToc: true
 
 `calculator` 객체를 완성하세요. 모든 메서드는 `this`를 사용해야 합니다.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let calculator = {
   result: 0,
 
@@ -347,7 +347,7 @@ hideInToc: true
 
 아래 코드를 실행해보고, 왜 그런 결과가 나오는지 이해해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let team = {
   name: "NEXT",
   members: ["철수", "영희", "민준"],

@@ -45,6 +45,9 @@ alert( fruits.length ); // 3
 layout: two-cols
 hideInToc: true
 ---
+
+<div clas="pr-4">
+
 # push / pop — 배열 끝
 
 **`push`** — 끝에 요소 추가
@@ -71,7 +74,12 @@ alert( fruits );       // 사과,오렌지
 
 </v-click>
 
+</div>
+
 ::right::
+
+<div class="pl-4">
+
 
 <v-click>
 
@@ -103,44 +111,17 @@ alert( fruits );          // 오렌지,배
 
 </v-click>
 
----
-layout: default
-hideInToc: true
----
-# 성능 차이 — push/pop vs shift/unshift
-
-| 메서드 | 위치 | 속도 | 이유 |
-|---|---|---|---|
-| `push` / `pop` | 끝 | **빠름** | 인덱스 변경 없음 |
-| `shift` / `unshift` | 앞 | **느림** | 모든 요소 인덱스 재정렬 |
-
-<v-click>
-
-**`shift` 내부 동작 (느린 이유)**
-
-```
-["사과", "오렌지", "배"]
-   0       1        2
-
-shift() 실행 후:
-① 인덱스 0 제거
-② 나머지 전부 한 칸씩 앞으로 이동 (1→0, 2→1)
-③ length 갱신
-```
-
-</v-click>
-
-<v-click>
-
-> 배열의 앞을 자주 다뤄야 한다면 `shift`/`unshift`보다 다른 자료구조를 검토해보세요.
-
-</v-click>
+</div>
 
 ---
-layout: default
+layout: two-cols-header
 hideInToc: true
 ---
 # 배열 반복문
+
+::left::
+
+<div class="pr-4">
 
 **① `for` (인덱스 순회)**
 
@@ -152,8 +133,6 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
-<v-click>
-
 **② `for...of` (값 순회, 권장)**
 
 ```js
@@ -164,9 +143,12 @@ for (let fruit of fruits) {
 }
 ```
 
-</v-click>
+</div>
 
-<v-click>
+::right::
+
+<div class="pl-4">
+
 
 **③ `for...in` (배열에 사용 금지 ❌)**
 
@@ -177,44 +159,8 @@ for (let key in arr) { ... }
 
 > 배열에는 반드시 `for` 또는 `for...of`를 사용하세요.
 
-</v-click>
 
----
-layout: default
-hideInToc: true
----
-# `length` 프로퍼티
-
-`length` = 가장 큰 인덱스 + 1 (요소 개수가 아님!)
-
-```js
-let fruits = [];
-fruits[123] = "사과";
-
-alert( fruits.length ); // 124 (요소는 1개지만!)
-```
-
-<v-click>
-
-**`length`는 쓰기도 가능합니다**
-
-```js
-let arr = [1, 2, 3, 4, 5];
-
-arr.length = 2;  // 뒤를 잘라냄
-alert( arr );    // 1,2
-
-arr.length = 5;  // 되돌리려 해도...
-alert( arr[3] ); // undefined (복구 불가!)
-```
-
-</v-click>
-
-<v-click>
-
-> **배열 비우기:** `arr.length = 0;`
-
-</v-click>
+</div>
 
 ---
 layout: default
@@ -273,7 +219,7 @@ hideInToc: true
 
 아래 코드를 완성해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let stack = [];
 
 // ① "첫번째", "두번째", "세번째"를 순서대로 push 하세요
@@ -295,7 +241,7 @@ hideInToc: true
 
 과일 배열을 순회하며 각 요소를 가공해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let fruits = ["사과", "오렌지", "바나나", "포도", "딸기"];
 
 // ① for...of를 사용해 모든 과일을 "🍎 사과" 형식으로 출력하세요
@@ -311,35 +257,3 @@ let fruits = ["사과", "오렌지", "바나나", "포도", "딸기"];
 // 5. 딸기
 // 바나나: 있음!
 ```
-
----
-layout: default
-hideInToc: true
----
-# Practice 3 — 배열로 스택 구현하기
-
-`push` / `pop`을 사용해 간단한 "실행 취소(Undo)" 기능을 구현해보세요.
-
-```js{monaco-run} {autorun:false}
-let history = []; // 작업 이력 스택
-
-function doAction(action) {
-  // action을 history에 추가하세요
-}
-
-function undo() {
-  // 마지막 작업을 history에서 꺼내 반환하세요
-  // history가 비어있으면 "취소할 작업 없음"을 반환하세요
-}
-
-doAction("글자 입력: 안");
-doAction("글자 입력: 녕");
-doAction("글자 입력: 하");
-
-console.log(undo()); // 글자 입력: 하
-console.log(undo()); // 글자 입력: 녕
-console.log(undo()); // 글자 입력: 안
-console.log(undo()); // 취소할 작업 없음
-```
-
----

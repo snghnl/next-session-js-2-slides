@@ -179,7 +179,7 @@ hideInToc: true
 
 아래 코드의 **출력 결과를 먼저 예측**하고, 실행해서 확인해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // ① 원시값 복사
 let x = 10;
 let y = x;
@@ -209,7 +209,7 @@ hideInToc: true
 
 `Object.assign`을 활용해 객체를 복사하고 병합해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let defaults = { theme: "light", language: "ko", fontSize: 14 };
 let userSettings = { theme: "dark", fontSize: 16 };
 
@@ -231,7 +231,7 @@ hideInToc: true
 
 얕은 복사와 깊은 복사의 차이를 직접 확인해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let original = {
   name: "철수",
   scores: { math: 90, english: 85 }

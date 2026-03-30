@@ -123,11 +123,16 @@ ask(
 </v-click>
 
 ---
-layout: two-cols
+layout: two-cols-header
 hideInToc: true
 ---
 
 # 선언문 vs 표현식: 핵심 차이
+
+::left::
+
+
+<div class="pr-4">
 
 **함수 선언문** — 호이스팅 O
 
@@ -142,7 +147,12 @@ function sayHi(name) {
 
 스크립트 실행 전 준비단계에서 먼저 생성됩니다.
 
+</div>
+
+
 ::right::
+
+<div class="pl-4">
 
 **함수 표현식** — 호이스팅 X
 
@@ -156,6 +166,11 @@ let sayHi = function(name) {
 ```
 
 실행 흐름이 해당 줄에 도달해야 생성됩니다.
+
+</div>
+
+
+<div class="pl-4">
 
 <v-click>
 
@@ -171,6 +186,8 @@ greet();
 
 </v-click>
 
+</div>
+
 ---
 layout: default
 hideInToc: true
@@ -180,7 +197,7 @@ hideInToc: true
 
 아래 함수 선언문들을 **함수 표현식**으로 바꿔 작성해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // 변환 전 (함수 선언문)
 // function double(n) { return n * 2; }
 // function isEven(n) { return n % 2 === 0; }
@@ -208,7 +225,7 @@ hideInToc: true
 `repeat(n, action)` 함수를 만들어보세요.
 `n`번 반복하며 매번 `action(i)`를 호출해야 합니다.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // repeat(n, action): n번 반복하며 action(i)를 호출 (i는 0부터 시작)
 function repeat(n, action) {
   // 여기를 완성하세요
@@ -237,7 +254,7 @@ hideInToc: true
 `score`에 따라 다른 함수를 `getGrade`에 저장하고 호출해보세요.
 함수 표현식과 삼항 연산자를 활용해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let score = 75; // 이 값을 바꿔가며 테스트해보세요
 
 // score가 60 이상이면 "합격입니다!", 미만이면 "불합격입니다." 를 출력하는

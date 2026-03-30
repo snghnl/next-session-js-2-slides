@@ -149,7 +149,7 @@ hideInToc: true
 
 아래 함수들을 **화살표 함수**로 변환해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // 변환 전
 // function square(n) { return n * n; }
 // function greet(name) { return "안녕, " + name + "!"; }
@@ -178,7 +178,7 @@ hideInToc: true
 
 `getAbsMax(a, b)` — 두 수 중 **절댓값이 더 큰 수**를 반환하는 함수를 화살표 함수로 작성해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // 중괄호와 return을 사용하는 화살표 함수로 작성하세요
 let getAbsMax = (a, b) => {
   // 여기를 완성하세요
@@ -200,7 +200,7 @@ hideInToc: true
 
 배열 메서드에 **화살표 함수**를 콜백으로 넘겨보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let numbers = [3, -1, 4, -1, 5, -9, 2, 6];
 
 // ① filter: 양수만 골라내기 (화살표 함수 사용)

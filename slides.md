@@ -1,6 +1,7 @@
 ---
 theme: default
 background: assets/js-thumbnail.png
+title: NEXT Session JavaScript 2
 
 info: |
   Presentation slides for JavaScript 2 Session for Korea Univ NEXT 14th members
@@ -10,7 +11,7 @@ drawings:
   persist: false
 transition: slide-left
 comark: true
-duration: 120min
+duration: 90min
 addons:
   - slidev-addon-react
 fonts:
@@ -33,7 +34,7 @@ hideInToc: true
 
 # 목차
 
-<Toc columns=2 />
+<Toc />
 
 ---
 layout: center
@@ -295,10 +296,6 @@ let dan = 3; // 이 값을 바꿔가며 테스트해보세요
 ```
 
 ---
-src: ./pages/01-switch.md
----
-
----
 src: ./pages/02-function.md
 ---
 
@@ -315,19 +312,7 @@ src: ./pages/05-object.md
 ---
 
 ---
-src: ./pages/06-object-copy.md
----
-
----
-src: ./pages/07-method-this.md
----
-
----
 src: ./pages/08-array.md
----
-
----
-src: ./pages/09-optional-chaining.md
 ---
 
 ---
@@ -339,5 +324,7 @@ src: ./pages/11-destructuring.md
 ---
 
 ---
-src: ./pages/12-json.md
+layout: center
+hideInToc: true
 ---
+# E.O.D
