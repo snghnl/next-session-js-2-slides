@@ -36,10 +36,54 @@ hideInToc: true
 
 <Toc />
 
+
+---
+hideInToc: true
+---
+
+# 안녕하세요!
+
+
+<div className="flex items-center justify-evenly gap-8 h-3/4">
+<img src="./assets/me.jpg" class="w-80 rounded-lg it" />
+<div>
+<h2 class="my-4">이승헌</h2>
+<div>
+    <ul>
+        <li>고려대학교 자유전공학부 컴퓨터학과 (2021.03~)</li>
+        <li>NEXT 13기 (2025)</li>
+        <li>DailyCompound (2025.07~2026.03)</li>
+    </ul>
+</div>
+</div>
+</div>
+
+---
+
+# Why JS
+
+<div class="flex items-center justify-center gap-12 absolute inset-0 top-16">
+  <div class="flex flex-col items-center gap-2">
+    <img src="/assets/js.png" class="h-24 w-24 object-contain" />
+    <span class="text-sm text-gray-500">JavaScript (1995)</span>
+  </div>
+  <div class="flex flex-col items-center gap-2">
+    <img src="/assets/nodejs.svg" class="h-24 object-contain" style="width:auto;" />
+    <span class="text-sm text-gray-500">Node.js (2009)</span>
+  </div>
+  <div class="flex flex-col items-center gap-2">
+    <img src="/assets/react.png" class="h-24 object-contain" style="width:auto;" />
+    <span class="text-sm text-gray-500">React (2013)</span>
+  </div>
+  <div class="flex flex-col items-center gap-2">
+    <img src="/assets/nextjs.png" class="h-24 object-contain" style="width:auto; max-width:10rem;" />
+    <span class="text-sm text-gray-500">Next.js (2016)</span>
+  </div>
+</div>
+
 ---
 layout: center
 class: text-center
-hideInToc: true
 ---
 
 # Review JavaScript 1
@@ -47,6 +91,7 @@ hideInToc: true
 지난 시간에 배운 내용을 직접 코드로 확인해 봅시다
 
 ---
+hideInToc: true
 ---
 
 ## JavaScript 1 Cheat Sheet
@@ -129,6 +174,7 @@ hideInToc: true
 </div>
 
 ---
+hideInToc: true
 ---
 
 ## 복습 — Hello, world!
@@ -142,6 +188,7 @@ hideInToc: true
 ```
 
 ---
+hideInToc: true
 ---
 
 ## 복습 — 코드 구조
@@ -157,6 +204,7 @@ console.log("코드 구조 복습")
 ```
 
 ---
+hideInToc: true
 ---
 
 ## 복습 — 변수와 상수
@@ -176,6 +224,7 @@ console.log(b); // "사과" 가 출력되어야 합니다
 ```
 
 ---
+hideInToc: true
 ---
 
 ## 복습 — 자료형
@@ -198,6 +247,7 @@ console.log(/* 여기를 완성하세요 */);
 ```
 
 ---
+hideInToc: true
 ---
 
 ## 복습 — alert / prompt / confirm
@@ -215,6 +265,7 @@ console.log(/* 여기를 완성하세요 */);
 ```
 
 ---
+hideInToc: true
 ---
 
 ## 복습 — 연산자
@@ -234,6 +285,7 @@ console.log("5" === 5);          // 예측: ?
 ```
 
 ---
+hideInToc: true
 ---
 
 ## 복습 — 조건문
@@ -256,6 +308,7 @@ let score = 85; // 이 값을 바꿔가며 테스트해보세요
 ```
 
 ---
+hideInToc: true
 ---
 
 ## 복습 — 논리 연산자
@@ -280,6 +333,7 @@ console.log("표시 이름:", displayName);
 ```
 
 ---
+hideInToc: true
 ---
 
 ## 복습 — 반복문
