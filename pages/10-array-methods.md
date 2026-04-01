@@ -173,7 +173,7 @@ hideInToc: true
 layout: default
 hideInToc: true
 ---
-# Practice 2 — map / filter / find
+# Practice 1 — map / filter / find
 
 ```js{monaco-run} {autorun:false, height:'220px'}
 let students = [
