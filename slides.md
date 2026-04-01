@@ -181,7 +181,7 @@ hideInToc: true
 
 콘솔에 **자기 이름**과 **가장 좋아하는 프로그래밍 언어**를 각각 출력해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // 힌트: console.log()를 두 번 사용해보세요
 // 예시: "이름: 홍길동" / "좋아하는 언어: JavaScript"
 
@@ -196,7 +196,7 @@ hideInToc: true
 아래 코드에는 **세미콜론 함정**이 숨어있습니다.
 코드를 실행해 에러를 확인하고, **올바르게 고쳐보세요**.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // ⚠️ 아래 코드를 그대로 실행해보고, 에러가 왜 발생하는지 생각해보세요
 // 그리고 세미콜론을 추가해 올바르게 수정해보세요
 console.log("코드 구조 복습")
@@ -212,7 +212,7 @@ hideInToc: true
 `a`와 `b` 두 변수의 값을 **서로 교환(swap)** 해보세요.
 세 번째 임시 변수 `temp`를 활용하세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let a = "사과";
 let b = "바나나";
 
@@ -232,7 +232,7 @@ hideInToc: true
 아래 각 값의 `typeof` 결과를 **주석으로 먼저 예측**한 뒤, 실행해서 확인해보세요.
 그리고 마지막 줄은 **템플릿 리터럴**로 완성해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 console.log(typeof 42);          // 예측: ?
 console.log(typeof "hello");     // 예측: ?
 console.log(typeof true);        // 예측: ?
@@ -256,7 +256,7 @@ hideInToc: true
 `confirm`으로 **"정말로 좋아하나요?"** 를 물어본 뒤,
 결과에 따라 다른 `alert` 메시지를 띄워보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 // 힌트:
 // 1. prompt로 음식 입력받기
 // 2. confirm으로 확인받기
@@ -273,7 +273,7 @@ hideInToc: true
 아래 각 줄의 **출력 결과를 주석으로 먼저 예측**하고, 실행해서 맞춰보세요.
 틀린 게 있다면 왜 그런지 생각해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 console.log(2 + 3 * 4);          // 예측: ?
 console.log("5" + 3);            // 예측: ?
 console.log("5" - 3);            // 예측: ?
@@ -300,7 +300,7 @@ hideInToc: true
 
 </div>
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let score = 85; // 이 값을 바꿔가며 테스트해보세요
 
 // if / else if / else 로 학점을 출력하는 코드를 작성하세요
@@ -315,7 +315,7 @@ hideInToc: true
 
 아래 조건을 **`&&`, `||`, `!`** 를 활용해 구현해보세요.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let isLoggedIn = true;
 let isAdmin = false;
 let userName = ""; // 빈 문자열로 테스트 — 나중에 "철수"로 바꿔보세요
@@ -341,7 +341,7 @@ hideInToc: true
 **구구단 한 단**을 출력하는 코드를 작성해보세요.
 `dan` 값을 바꾸면 해당 단의 구구단이 출력되어야 합니다.
 
-```js{monaco-run} {autorun:false}
+```js{monaco-run} {autorun:false, height:'220px'}
 let dan = 3; // 이 값을 바꿔가며 테스트해보세요
 
 // for 반복문으로 dan단의 구구단을 출력하세요
